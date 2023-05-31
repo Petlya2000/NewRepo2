@@ -17,7 +17,7 @@ namespace Weather1
 
                 foreach (WeatherData weatherData in weatherResponse.list)
                 {
-                    Console.WriteLine(weatherData.name + ": " + weatherData.main.temp + " °C");
+                    Console.WriteLine(weatherData.name + ": "+ "vlaznost-> "+ weatherData.main.humidity +"|temperatura-> "  + weatherData.main.temp + " °C|veter-> "+ weatherData.wind.speed);
                 }
             }
             catch (Exception ex)
